@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.head {
+  border-bottom: 2px solid gray;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 45px;
+}
+a {
+  text-decoration: none;
+}
+#grid ol {
+  border-right: 2px solid gray;
+  margin: 0;
+  padding: 20px 20px 20px 32px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+@media(max-width:800px){ /* = screen width < 800px 과 같은 의미 */
+  #grid {
+    display: block;
+  }
+  .head{
+    font-size: 40px;
+    border-bottom: none;
+  }
+  #grid ol{
+    border-right: 0;
+  }
+}
