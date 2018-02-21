@@ -1,29 +1,45 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>네이버 : 로그인</title>
 <style>
   #container {
+    position: relative;
     width: 500px;
     border: 1px solid gray;
     text-align: center;
     margin: auto;
   }
+  .lang {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .login input{
+    width: 326px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .login input[type=submit]{
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
 </style>
 </head>
 <body>
   <div id="container">
-    <select>
+    <select class="lang">
       <option value="korean">한국어</option>
       <option value="english">English</option>
       <option value="chinese">中文</option>
     </select>
     <h1>NAVER</h1>
-    <form action="#">
-      <input type="text">
+    <form action="#" class="login" method="post">
+      <input type="text" placeholder="아이디">
         <br>
-      <input type="password">
+      <input type="password" placeholder="비밀번호">
         <br>
       <input type="submit" value="로그인">
     </form>
